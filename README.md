@@ -1,13 +1,4 @@
-# al-folio
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[maintainers]: https://img.shields.io/badge/maintainers-4-success.svg 'Number of maintainers'
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-## Template source
-
-This website is a modification of [alshedivat/al-folio](https://github.com/alshedivat/al-folio) under the MIT license.
-
-## Setup and contribution instructions
+# Lab Website Setup and Contribution Instructions
 
 ### Local setup using Docker (Recommended)
 Using Docker to install Jekyll and Ruby dependencies is the easiest way.
