@@ -1,0 +1,99 @@
+body {
+  --sidebarwidth: 200px;
+
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  grid-template-rows: [header] 50px [mainstuff] auto [paperlist] auto;
+  grid-template-columns: 3% [sidebar] var(--sidebarwidth) [mainstuff] auto 3%;
+  column-gap: 50px;
+  justify-items: center;
+  align-items: start;
+
+  color: darkslategray;
+  font-family: "Avenir Next"
+}
+
+a {
+  margin-right: 10px;
+  color: steelblue;
+  text-decoration: none;
+}
+
+a > span {
+  margin-right: 4px;
+}
+
+#photo-container {
+  grid-row-start: mainstuff;
+  grid-column-start: sidebar;
+
+  color: #ddd;
+  font-size: 0.8em;
+  cursor: default;
+}
+
+#photo-container:hover {
+  color: #bbb
+}
+
+#photo-container #photo {
+  width: var(--sidebarwidth);
+  height: var(--sidebarwidth);
+  border-radius: 250px;
+  background: url('images/billhowe.png') center;
+  background-size: contain;
+  margin: 5px;
+}
+
+#lab-intro {
+  grid-row-start: mainstuff;
+  grid-column-start: mainstuff;
+  justify-self: stretch;
+}
+
+#name {
+  justify-self: start;
+  font-size: 1.8em;
+  font-family: 'Avenir';
+  font-weight: bold;
+}
+
+#paper-list {
+  grid-row-start: paperlist;
+  grid-column-start: mainstuff;
+  justify-self: left;
+}
+
+.paper-category {
+  margin-top: 30px;
+  color: #bbb;
+  font-size: 1.2em;
+}
+
+.paper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.paper-title {
+  font-weight: bold;
+}
+
+.honorable-mention{
+  color: #b90103;
+  font-weight: bold;
+}
+
+.best-paper {
+  color: #FFBF17;
+  font-weight: bold;
+}
+
+.me {
+  /* font-weight: bold; */
+}
+
+.links {
+  font-size: 0.9em;
+}
